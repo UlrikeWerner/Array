@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int[] numbers = createArray(10, 1);
@@ -31,6 +33,13 @@ public class Main {
         System.out.println("Test");
         int[] test= new int[]{7, 4,2};
         System.out.println(addTwoArrays(numbers, test).length);
+
+        System.out.println("------");
+        System.out.println("Konsolen Input");
+        Scanner scan = new Scanner(System.in);
+        String word = scan.nextLine();
+        printArray(word);
+
     }
     public static int[] createArray(int length, int startValue){
         int[] result = new int[length];
@@ -43,6 +52,12 @@ public class Main {
     public static void printArray(int[] values){
         for (int value : values){
             System.out.println(value);
+        }
+    }
+
+    public static void printArray(String values){
+        for (int i = 0; i < values.length(); i++){
+            System.out.println(values.charAt(i));
         }
     }
 
