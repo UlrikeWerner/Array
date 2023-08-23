@@ -6,7 +6,7 @@ public class Main {
 
         // Aufgabe 1
         System.out.println("Aufgabe 1");
-        printArray(numbers);
+        printValue_s(numbers);
 
         System.out.println("------");
         // Aufgabe 2
@@ -22,12 +22,12 @@ public class Main {
         // Aufgabe 4
         System.out.println("Aufgabe 4");
         int[] largerNumbers = createArray(10, 11);
-        printArray(largerNumbers);
+        printValue_s(largerNumbers);
 
         System.out.println("------");
         System.out.println("Aufgabe 5");
         // Aufgabe 5
-        printArray(addTwoArrays(numbers, largerNumbers));
+        printValue_s(addTwoArrays(numbers, largerNumbers));
 
         System.out.println("------");
         System.out.println("Test");
@@ -38,7 +38,7 @@ public class Main {
         System.out.println("Konsolen Input");
         Scanner scan = new Scanner(System.in);
         String word = scan.nextLine();
-        printArray(word);
+        printValue_s(word);
 
     }
     public static int[] createArray(int length, int startValue){
@@ -49,13 +49,13 @@ public class Main {
         return result;
     }
 
-    public static void printArray(int[] values){
+    public static void printValue_s(int[] values){
         for (int value : values){
             System.out.println(value);
         }
     }
 
-    public static void printArray(String values){
+    public static void printValue_s(String values){
         for (int i = 0; i < values.length(); i++){
             System.out.println(values.charAt(i));
         }
