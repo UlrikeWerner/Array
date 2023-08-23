@@ -31,7 +31,7 @@ public class Main {
 
         System.out.println("------");
         System.out.println("Test");
-        int[] test= new int[]{7, 4,2};
+        int[] test= {7, 4,2};
         System.out.println(addTwoArrays(numbers, test).length);
 
         System.out.println("------");
